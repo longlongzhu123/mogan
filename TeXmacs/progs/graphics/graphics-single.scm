@@ -106,17 +106,8 @@
       (let ((tag (get-tag obj)))
         (cond
           ;; 特殊处理图形宏
-<<<<<<< HEAD
           ;; ((== tag 'circle) 2)
           
-=======
-          ((== tag 'circle) 2)
-          ((== tag 'ellipse) 3)  ;; 两个焦点和一个椭圆上的点
-          ((== tag 'std-arc) 3)
-          ((== tag 'std-arc-counterclockwise) 3)
-          ((== tag 'sector) 3)
-          ((== tag 'sector-counterclockwise) 3)
->>>>>>> 122ff85fe (合并一起修改了单击操作逻辑和矩形绘制功能)
           ;; 使用tag-maximal-arity作为备选
           ((and (defined? 'tag-maximal-arity)
                 (tag-maximal-arity tag))
